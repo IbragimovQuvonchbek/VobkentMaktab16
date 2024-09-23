@@ -28,3 +28,5 @@ navbar.addEventListener('click', function(event) {
         navbarMenu.classList.toggle('active');
     }
 });
+
+
