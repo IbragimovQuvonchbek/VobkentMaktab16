@@ -17,3 +17,14 @@ scrollUpBtn.onclick = function() {
         behavior: 'smooth'
     });
 };
+
+// Navbar Toggle for Mobile
+const navbar = document.getElementById('navbar');
+const navbarMenu = navbar.querySelector('ul');
+
+navbar.addEventListener('click', function(event) {
+    // Check if the hamburger icon is clicked
+    if (event.target === navbar) {
+        navbarMenu.classList.toggle('active');
+    }
+});
