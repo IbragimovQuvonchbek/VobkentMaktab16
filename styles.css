@@ -1,0 +1,171 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    background-color: #555;
+}
+
+/* Section Styles */
+.section {
+    height: 100vh;
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+#about { background-color: #f0f8ff; }
+#admissions { background-color: #faf0e6; }
+#academics { background-color: #ffe4e1; }
+#news { background-color: #e6e6fa; }
+#teachers { background-color: #fffacd; }
+#contact { background-color: #f0fff0; }
+
+/* About Section Image Grid */
+.about-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* PDF Download Link */
+.pdf-download {
+    margin-top: 30px;
+}
+
+.pdf-download a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.pdf-download a:hover {
+    background-color: #555;
+}
+
+/* Teachers Section Styling */
+/* Teachers Section Styling */
+.teachers-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for multiple rows */
+    justify-content: center;
+    gap: 30px; /* Adjust gap between items */
+    margin-top: 20px; /* Add some space above the section */
+}
+
+.teacher {
+    flex: 0 0 200px; /* Set a fixed width for each teacher */
+    text-align: center;
+}
+
+.teacher-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Additional styling for layout */
+@media (min-width: 600px) {
+    .teacher:nth-child(1),
+    .teacher:nth-child(2) {
+        flex: 0 0 45%; /* Two items on the top row */
+    }
+
+    .teacher:nth-child(3),
+    .teacher:nth-child(4),
+    .teacher:nth-child(5) {
+        flex: 0 0 30%; /* Three items on the bottom row */
+    }
+}
+
+
+/* Scroll Button */
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    border-radius: 50px;
+}
+
+#scrollUpBtn:hover {
+    background-color: #555;
+}
+
+.news-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.news-images img {
+    width: 100%;
+    max-width: 400px; /* Increased max width for larger images */
+    margin: 10px;
+    border-radius: 8px; /* Optional: add rounded corners */
+    height: auto; /* Maintain aspect ratio */
+}
+
