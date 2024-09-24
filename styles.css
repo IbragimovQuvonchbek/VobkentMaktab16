@@ -240,7 +240,7 @@ body {
     #navbar::after {
         content: "\2630"; /* Hamburger icon */
         font-size: 24px;
-        color: white;
+        color: black;
         position: absolute;
         right: 20px;
         top: 15px;
